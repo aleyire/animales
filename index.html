@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Desafio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mx-auto text-center">
+        <img
+          src="./assets/img/animales.png"
+          alt="animales"
+          class="img-fluid"
+        />
+        <h1 class="my-3 title">Consulta Veterinaria</h1>
+      </div>
+      <form id="formulario">
+        <div class="form-group">
+          <label for="propietario"><strong> Dueño: </strong></label>
+          <input
+            type="text"
+            class="form-control"
+            id="propietario"
+            aria-describedby="textoAyuda"
+          />
+          <small id="textoAyuda" class="form-text text-muted"
+            >Nunca compartiremos tus datos.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="telefono"><strong>Número Telefónico:</strong></label>
+          <input type="text" class="form-control" id="telefono" />
+        </div>
+        <div class="form-group">
+          <label for="direccion"><strong>Lugar de Residencia:</strong></label>
+          <input type="text" class="form-control" id="direccion" />
+        </div>
+        <div class="form-group">
+          <label for="nombreMascota"><strong>Nombre de la Mascota:</strong></label>
+          <input type="text" class="form-control" id="nombreMascota" />
+        </div>
+        <div class="form-group">
+          <label for="tipo"><strong>Tipo</strong></label>
+          <select class="form-control" id="tipo">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="conejo">Conejo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="enfermedad"><strong>Motivo de la consulta:</strong></label>
+          <input type="text" class="form-control" id="enfermedad" />
+        </div>
+        <button type="submit" class="btn btn-primary"><strong>Agregar</strong></button>
+      </form>
+      <div class="text-center mt-5 borde">
+        <p><strong>Datos Agregados</strong></p>
+        <div id="resultado">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

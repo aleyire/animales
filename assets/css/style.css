@@ -1,0 +1,16 @@
+form {
+    font-family: 'Tajawal', sans-serif;
+}
+body {
+    background-image: linear-gradient(rgba(151, 144, 144, 0.9), rgba(255, 255, 255, 0.9)), url('../img/conejo-perro-gato.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1800px;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgba(20, 19, 19, 0.699);
+}
+.borde {
+    border-style: groove;
+    border-color: rgb(255, 255, 255);
+}
